@@ -10,12 +10,12 @@
     - if @item[:scripts]
       - @item[:scripts].each do |script|
         %script{:src => script, :type => "text/javascript"}
-    %title= "Site Name" + (@item[:title] ? " - #{@item[:title]}" : "")
+    %title= @site.config[:meta_data][:title] + (@item[:title] ? " - #{@item[:title]}" : "")
   %body{:class => @item[:page_id]}
     #container
       #header
-        %span#site_name Site Name
-        %span#tag_line An awesome site since 2010
+        %span#site_name= @site.config[:meta_data][:title]
+        %span#tag_line= @site.config[:meta_data][:tag_line]
 
       %ul#nav
         %li= link_to "Home", "/"
@@ -29,5 +29,5 @@
         = yield
 
       #footer
-        %p &copy; 2010, Site Owner
+        %p= "&copy; " + @site.config[:meta_data][:copyright]
 

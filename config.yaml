@@ -49,3 +49,8 @@ deploy:
 #    dst: "foo@bar.com:/home/foo/bar.com/"
   production:
 #    dst: "foo@bar2.com:/home/foo/bar.com/"
+
+meta_data:
+  title: My Awesome Site
+  tag_line: Lotta strands in ole duder's head
+  copyright: 2011, Cameron Desautels
