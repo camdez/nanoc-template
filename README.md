@@ -1,6 +1,6 @@
 # nanoc-template
 
-My basic template for building sites using [nanoc](http://nanoc.stoneship.org/), including [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/), and [Markdown](http://daringfireball.net/projects/markdown/) support.
+My basic template for building sites using [nanoc](http://nanoc.stoneship.org/), including [HAML](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/) and [Markdown](http://daringfireball.net/projects/markdown/) support.
 
 ## Author
 
