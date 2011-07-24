@@ -46,9 +46,9 @@ data_sources:
 # Deployment settings
 deploy:
   default:
-#    dst: "foo@bar.com:/home/foo/bar.com/"
+#    dst: "foo@bar.com:/home/foo/bar.com"
   production:
-#    dst: "foo@bar2.com:/home/foo/bar.com/"
+#    dst: "foo@bar2.com:/home/foo/bar.com"
 
 meta_data:
   title: My Awesome Site
