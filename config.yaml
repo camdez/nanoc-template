@@ -46,6 +46,6 @@ data_sources:
 # Deployment settings
 deploy:
   default:
-#    dst: "teaapps@teaapps.com:/home/teaapps/teaapps.com/b/huntatune"
+#    dst: "foo@bar.com:/home/foo/bar.com/"
   production:
-#    dst: "huntatunecom@huntatune.com:/vservers/huntatunecom/htdocs"
+#    dst: "foo@bar2.com:/home/foo/bar.com/"
