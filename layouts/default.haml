@@ -6,6 +6,7 @@
     - if @item[:stylesheets]
       - @item[:stylesheets].each do |stylesheet|
         %link{:rel => "stylesheet", :href => stylesheet, :type => "text/css", :media => "screen"}
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js", :type => "text/javascript"}
     %script{:src => "/js/site.js", :type => "text/javascript"}
     - if @item[:scripts]
       - @item[:scripts].each do |script|
