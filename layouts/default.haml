@@ -1,0 +1,33 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=UTF-8"}
+    %link{:rel => "stylesheet", :href => "/css/screen.css", :type => "text/css", :media => "screen"}
+    - if @item[:stylesheets]
+      - @item[:stylesheets].each do |stylesheet|
+        %link{:rel => "stylesheet", :href => stylesheet, :type => "text/css", :media => "screen"}
+    %script{:src => "/js/site.js", :type => "text/javascript"}
+    - if @item[:scripts]
+      - @item[:scripts].each do |script|
+        %script{:src => script, :type => "text/javascript"}
+    %title= "Site Name" + (@item[:title] ? " - #{@item[:title]}" : "")
+  %body{:class => @item[:page_id]}
+    #container
+      #header
+        %span#site_name Site Name
+        %span#tag_line An awesome site since 2010
+
+      %ul#nav
+        %li= link_to "Home", "/"
+        %li= link_to "Foo", "#"
+        %li= link_to "Bar", "#"
+        %li= link_to "Baz", "#"
+
+      %h1= @item[:title]
+
+      #main
+        = yield
+
+      #footer
+        %p &copy; 2010, Site Owner
+
