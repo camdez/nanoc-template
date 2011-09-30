@@ -30,6 +30,10 @@ compile '*' do
       filter :kramdown
       layout 'default'
       filter :relativize_paths, :type => :html
+    when 'haml'
+      filter :haml
+      layout 'default'
+      filter :relativize_paths, :type => :html
     when 'js'
       nil
     else
